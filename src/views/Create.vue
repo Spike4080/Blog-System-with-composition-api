@@ -38,65 +38,64 @@ export default {
 </script>
 
 <style>
+    form {
+        max-width: 480px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    input, textarea {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid #d2d2d2;
+    }
+
+    textarea {
+        height: 160px;
+    }
+
+    label {
+        display: inline-block;
+        margin-top: 30px;
+        position: relative;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    label::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #ff8800;
+        position: absolute;
+        z-index: -1;
+        padding-right: 40px;
+        left: -30px;
+        transform: rotateZ(-1.5deg);
+    }
+
+    button {
+        display: block;
+        margin-top: 30px;
+        background: #ff8800;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        font-size: 18px
+    }
+
     .pill {
         display: inline-block;
-        margin: 10px 10px 10px 0;
+        margin: 10px 10px 0 0;
         color: #444;
         background: #ddd;
         padding: 8px;
         border-radius: 20px;
         font-size: 14px;
     }
-
-    body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        form {
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            width: 300px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            display: block;
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-    
-    
 </style>
