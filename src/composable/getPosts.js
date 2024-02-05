@@ -14,7 +14,6 @@ let getPosts = () => {
     } catch (err) {
       error.value = err.message;
     }
-    return posts.value;
   };
   return { posts, error, load }; // send data to home
 };
