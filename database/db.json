@@ -1,0 +1,19 @@
+{
+    "posts":[
+        {
+            "title": "project title 1",
+            "id": 1,
+            "body": "lorem ispu ...."
+        },
+        {
+            "title": "project title 2",
+            "id": 2,
+            "body": "lorem ispu ...."
+        },
+        {
+            "title": "project title 3",
+            "id": 3,
+            "body": "lorem ispu ...."
+        }
+    ]
+}

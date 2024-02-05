@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-      <PostsList :posts="posts"></PostsList>
+      <div>
+        <h1>{{error}}</h1>
+      </div>
+      <div v-if="posts.length>0">
+        <PostsList :posts="posts"></PostsList>
+      </div>
+      <div v-else>
+        Loading.....
+      </div>
   </div>
 </template>
 
 <script>
 import PostsList from '../components/PostsList'
-import { computed, ref } from 'vue';
+import getPosts from '../composable/getPosts'
+import { ref } from 'vue';
 export default {
   components: { PostsList },
   setup() {
-    let posts = ref([]);
-
-    return {posts};
+    let {posts,error,load} = getPosts();
+    load();
+    return {posts,error};
   }
 }
 </script>
