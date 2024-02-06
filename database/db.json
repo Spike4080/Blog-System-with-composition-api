@@ -1,19 +1,41 @@
 {
-    "posts":[
-        {
-            "title": "project title 1",
-            "id": 1,
-            "body": "lorem ispu ...."
-        },
-        {
-            "title": "project title 2",
-            "id": 2,
-            "body": "lorem ispu ...."
-        },
-        {
-            "title": "project title 3",
-            "id": 3,
-            "body": "lorem ispu ...."
-        }
-    ]
+  "posts": [
+    {
+      "title": "project title 1",
+      "id": "1",
+      "body": "lorem ispu ...."
+    },
+    {
+      "title": "project title 2",
+      "id": "2",
+      "body": "lorem ispu ...."
+    },
+    {
+      "title": "project title 3",
+      "id": "3",
+      "body": "lorem ispu ...."
+    },
+    {
+      "id": "3e82",
+      "title": "test",
+      "body": "test",
+      "tags": [
+        "php",
+        "laravel",
+        "vuejs",
+        "reactjs"
+      ]
+    },
+    {
+      "id": "3bfc",
+      "title": "Backend Developer",
+      "body": "A backend developer from myanmar skilled in -",
+      "tags": [
+        "php",
+        "laravel",
+        "nodejs",
+        "reactjs"
+      ]
+    }
+  ]
 }
