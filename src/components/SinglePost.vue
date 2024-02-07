@@ -65,4 +65,9 @@ export default {
   .pill a {
     text-decoration: none;
   }
+
+  .pill a.router-link-exact-active {
+    color: crimson;
+    font-weight: bold;
+  }
 </style>
